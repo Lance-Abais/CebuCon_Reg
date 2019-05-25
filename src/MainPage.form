@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainPage">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="20" y="20" width="552" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="d9708" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="f78e5" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <enabled value="true"/>
+              <icon value="favicon.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="e1edb" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <enabled value="true"/>
+              <text value="CebuCON: Construction Show Cebu"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

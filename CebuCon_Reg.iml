@@ -10,5 +10,6 @@
     <orderEntry type="library" name="com.google.zxing:core:3.4.0" level="project" />
     <orderEntry type="library" name="com.github.sarxos:webcam-capture:0.3.12" level="project" />
     <orderEntry type="library" name="org.xerial:sqlite-jdbc:3.27.2.1" level="project" />
+    <orderEntry type="library" name="com.github.davidmoten:word-wrap:0.1.6" level="project" />
   </component>
 </module>
