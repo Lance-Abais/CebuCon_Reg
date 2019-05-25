@@ -48,7 +48,9 @@ public class Main extends JFrame implements Printable {
         preview.setText("Print Preview");
         panel.add(qrRead);
         panel.add(preview);
-        frame.add(panel);
+        MainPage mainPage = new MainPage();
+        JPanel content = mainPage.setContent();
+        frame.add(content);
         frame.setSize(200,300);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
