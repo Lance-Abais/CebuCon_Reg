@@ -3,9 +3,12 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.image.BufferedImage;
 import java.io.Closeable;
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.Exchanger;
 
+import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 
 import com.github.sarxos.webcam.Webcam;
@@ -30,7 +33,12 @@ public class QrCapture extends JFrame implements Closeable {
         super();
 
         setLayout(new FlowLayout());
-        setTitle("Capture");
+        setTitle("QR Code Reader");
+        try {
+            setIconImage(ImageIO.read(new File("C:\\Users\\ljda0\\IdeaProjects\\CebuCon_Reg\\src\\favicon (1).png")));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         addWindowListener(new WindowAdapter() {

@@ -52,6 +52,7 @@
         </constraints>
         <properties>
           <background color="-4407616"/>
+          <doubleBuffered value="false"/>
           <focusCycleRoot value="true"/>
           <opaque value="true"/>
         </properties>
@@ -60,7 +61,7 @@
         </clientProperties>
         <border type="none"/>
         <children>
-          <grid id="ed850" layout-manager="FlowLayout" hgap="30" vgap="5" flow-align="0">
+          <grid id="ed850" layout-manager="FlowLayout" hgap="30" vgap="5" flow-align="1">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
               <gridbag weightx="1.0" weighty="1.0"/>
@@ -117,7 +118,7 @@
               </component>
             </children>
           </grid>
-          <grid id="711c9" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+          <grid id="711c9" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
               <gridbag weightx="1.0" weighty="1.0"/>
@@ -134,6 +135,7 @@
                 <properties>
                   <font name="Noto Sans" size="24" style="1"/>
                   <foreground color="-16777216"/>
+                  <horizontalAlignment value="0"/>
                   <opaque value="false"/>
                   <text value="Interior Designer"/>
                 </properties>
@@ -143,6 +145,7 @@
                 <properties>
                   <font name="Noto Sans" size="24" style="1"/>
                   <foreground color="-16777216"/>
+                  <horizontalAlignment value="0"/>
                   <opaque value="false"/>
                   <text value="Electrical Engineer"/>
                 </properties>
@@ -152,6 +155,7 @@
                 <properties>
                   <font name="Noto Sans" size="24" style="1"/>
                   <foreground color="-16777216"/>
+                  <horizontalAlignment value="0"/>
                   <opaque value="false"/>
                   <text value="Mechanical Engineer"/>
                 </properties>
@@ -161,6 +165,7 @@
                 <properties>
                   <font name="Noto Sans" size="24" style="1"/>
                   <foreground color="-16777216"/>
+                  <horizontalAlignment value="0"/>
                   <opaque value="false"/>
                   <text value="Trade Buyer"/>
                 </properties>
@@ -170,6 +175,7 @@
                 <properties>
                   <font name="Noto Sans" size="24" style="1"/>
                   <foreground color="-16777216"/>
+                  <horizontalAlignment value="0"/>
                   <opaque value="false"/>
                   <text value="Others"/>
                 </properties>
@@ -219,7 +225,67 @@
                       <text value="PURPOSE OF VISIT"/>
                     </properties>
                   </component>
-                  <component id="4bfaf" class="javax.swing.JCheckBox" binding="checkBox1" default-binding="true">
+                  <component id="ad0e8" class="javax.swing.JCheckBox" binding="evaluateProductForPurchaseCheckBox" default-binding="true">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <opaque value="false"/>
+                      <text value="Evaluate product for purchase"/>
+                    </properties>
+                  </component>
+                  <component id="5539" class="javax.swing.JCheckBox" binding="consultAConstructionProblemCheckBox" default-binding="true">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <opaque value="false"/>
+                      <text value="Consult a Construction Problem"/>
+                    </properties>
+                  </component>
+                  <component id="455fd" class="javax.swing.JCheckBox" binding="seekDealershipDistributorshipRightsCheckBox" default-binding="true">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <opaque value="false"/>
+                      <text value="Seek Dealership or Distributorship rights"/>
+                    </properties>
+                  </component>
+                  <component id="6f976" class="javax.swing.JCheckBox" binding="seekAlternativeSupplierCheckBox" default-binding="true">
+                    <constraints>
+                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <opaque value="false"/>
+                      <text value="Seek alternative supplier"/>
+                    </properties>
+                  </component>
+                  <component id="84d86" class="javax.swing.JCheckBox" binding="attendTechnicalSeminarCheckBox" default-binding="true">
+                    <constraints>
+                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <opaque value="false"/>
+                      <text value="Attend Technical Seminar"/>
+                    </properties>
+                  </component>
+                  <component id="4bfaf" class="javax.swing.JCheckBox" binding="seeNewProductsCheckBox" default-binding="true">
                     <constraints>
                       <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="1.0" weighty="1.0"/>
@@ -229,67 +295,7 @@
                       <foreground color="-4407616"/>
                       <opaque value="false"/>
                       <selected value="false"/>
-                      <text value="CheckBox"/>
-                    </properties>
-                  </component>
-                  <component id="ad0e8" class="javax.swing.JCheckBox" binding="checkBox2" default-binding="true">
-                    <constraints>
-                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                      <gridbag weightx="1.0" weighty="1.0"/>
-                    </constraints>
-                    <properties>
-                      <font name="Noto Sans" size="24" style="1"/>
-                      <foreground color="-4407616"/>
-                      <opaque value="false"/>
-                      <text value="CheckBox"/>
-                    </properties>
-                  </component>
-                  <component id="5539" class="javax.swing.JCheckBox" binding="checkBox3" default-binding="true">
-                    <constraints>
-                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                      <gridbag weightx="1.0" weighty="1.0"/>
-                    </constraints>
-                    <properties>
-                      <font name="Noto Sans" size="24" style="1"/>
-                      <foreground color="-4407616"/>
-                      <opaque value="false"/>
-                      <text value="CheckBox"/>
-                    </properties>
-                  </component>
-                  <component id="455fd" class="javax.swing.JCheckBox" binding="checkBox4" default-binding="true">
-                    <constraints>
-                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                      <gridbag weightx="1.0" weighty="1.0"/>
-                    </constraints>
-                    <properties>
-                      <font name="Noto Sans" size="24" style="1"/>
-                      <foreground color="-4407616"/>
-                      <opaque value="false"/>
-                      <text value="CheckBox"/>
-                    </properties>
-                  </component>
-                  <component id="6f976" class="javax.swing.JCheckBox" binding="checkBox5" default-binding="true">
-                    <constraints>
-                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                      <gridbag weightx="1.0" weighty="1.0"/>
-                    </constraints>
-                    <properties>
-                      <font name="Noto Sans" size="24" style="1"/>
-                      <foreground color="-4407616"/>
-                      <opaque value="false"/>
-                      <text value="CheckBox"/>
-                    </properties>
-                  </component>
-                  <component id="84d86" class="javax.swing.JCheckBox" binding="checkBox6" default-binding="true">
-                    <constraints>
-                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                      <gridbag weightx="1.0" weighty="1.0"/>
-                    </constraints>
-                    <properties>
-                      <font name="Noto Sans" size="24" style="1"/>
-                      <foreground color="-4407616"/>
-                      <opaque value="false"/>
-                      <text value="CheckBox"/>
+                      <text value="See new products"/>
                     </properties>
                   </component>
                 </children>
@@ -310,7 +316,7 @@
                       <gridbag weightx="1.0" weighty="1.0"/>
                     </constraints>
                     <properties>
-                      <background color="-16777216"/>
+                      <background color="-16734355"/>
                       <borderPainted value="true"/>
                       <contentAreaFilled value="true"/>
                       <focusable value="true"/>
@@ -318,7 +324,7 @@
                       <foreground color="-16777216"/>
                       <multiClickThreshhold value="1"/>
                       <name value="printButton"/>
-                      <opaque value="false"/>
+                      <opaque value="true"/>
                       <text value="PRINT"/>
                     </properties>
                   </component>
@@ -335,7 +341,7 @@
                       <label value="QR CODE"/>
                       <multiClickThreshhold value="1"/>
                       <name value="qrRead"/>
-                      <opaque value="false"/>
+                      <opaque value="true"/>
                       <text value="QR CODE"/>
                     </properties>
                   </component>
@@ -363,7 +369,7 @@
                       <text value="HOW DID YOU KNOW ABOUT CEBUCON?"/>
                     </properties>
                   </component>
-                  <component id="95b42" class="javax.swing.JCheckBox" binding="checkBox7" default-binding="true">
+                  <component id="95b42" class="javax.swing.JCheckBox" binding="newspaperCheckBox" default-binding="true">
                     <constraints>
                       <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="1.0" weighty="1.0"/>
@@ -372,10 +378,10 @@
                       <font name="Noto Sans" size="24" style="1"/>
                       <foreground color="-4407616"/>
                       <opaque value="false"/>
-                      <text value="CheckBox"/>
+                      <text value="Newspaper"/>
                     </properties>
                   </component>
-                  <component id="16135" class="javax.swing.JCheckBox" binding="checkBox8" default-binding="true">
+                  <component id="16135" class="javax.swing.JCheckBox" binding="CDNDigitalCheckBox" default-binding="true">
                     <constraints>
                       <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="1.0" weighty="1.0"/>
@@ -384,10 +390,10 @@
                       <font name="Noto Sans" size="24" style="1"/>
                       <foreground color="-4407616"/>
                       <opaque value="false"/>
-                      <text value="CheckBox"/>
+                      <text value="CDN Digital"/>
                     </properties>
                   </component>
-                  <component id="f02a9" class="javax.swing.JCheckBox" binding="checkBox9" default-binding="true">
+                  <component id="f02a9" class="javax.swing.JCheckBox" binding="facebookAdsCheckBox" default-binding="true">
                     <constraints>
                       <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="1.0" weighty="1.0"/>
@@ -396,10 +402,10 @@
                       <font name="Noto Sans" size="24" style="1"/>
                       <foreground color="-4407616"/>
                       <opaque value="false"/>
-                      <text value="CheckBox"/>
+                      <text value="Facebook Ads"/>
                     </properties>
                   </component>
-                  <component id="24f6f" class="javax.swing.JCheckBox" binding="checkBox10" default-binding="true">
+                  <component id="24f6f" class="javax.swing.JCheckBox" binding="bannersStreamersCheckBox" default-binding="true">
                     <constraints>
                       <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="1.0" weighty="1.0"/>
@@ -408,10 +414,10 @@
                       <font name="Noto Sans" size="24" style="1"/>
                       <foreground color="-4407616"/>
                       <opaque value="false"/>
-                      <text value="CheckBox"/>
+                      <text value="Banners or Streamers  "/>
                     </properties>
                   </component>
-                  <component id="83c3c" class="javax.swing.JCheckBox" binding="checkBox11" default-binding="true">
+                  <component id="83c3c" class="javax.swing.JCheckBox" binding="cebuCONMailerCheckBox" default-binding="true">
                     <constraints>
                       <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="1.0" weighty="1.0"/>
@@ -420,10 +426,10 @@
                       <font name="Noto Sans" size="24" style="1"/>
                       <foreground color="-4407616"/>
                       <opaque value="false"/>
-                      <text value="CheckBox"/>
+                      <text value="CebuCON Mailer"/>
                     </properties>
                   </component>
-                  <component id="82c38" class="javax.swing.JCheckBox" binding="checkBox12" default-binding="true">
+                  <component id="82c38" class="javax.swing.JCheckBox" binding="wordOfMouthCheckBox" default-binding="true">
                     <constraints>
                       <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="1.0" weighty="1.0"/>
@@ -432,7 +438,7 @@
                       <font name="Noto Sans" size="24" style="1"/>
                       <foreground color="-4407616"/>
                       <opaque value="false"/>
-                      <text value="CheckBox"/>
+                      <text value="Word of Mouth"/>
                     </properties>
                   </component>
                 </children>
@@ -442,7 +448,7 @@
           <grid id="f857" binding="contactDetails" layout-manager="GridBagLayout">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-              <gridbag top="0" left="10" bottom="10" right="0" weightx="1.0" weighty="1.0"/>
+              <gridbag top="0" left="10" bottom="10" right="0" weightx="1.5" weighty="1.0"/>
             </constraints>
             <properties>
               <opaque value="false"/>
@@ -460,7 +466,7 @@
                   <text value="FULL NAME"/>
                 </properties>
               </component>
-              <component id="a28a4" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+              <component id="a28a4" class="javax.swing.JTextField" binding="fName">
                 <constraints>
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
                   <gridbag weightx="1.0" weighty="1.0"/>
@@ -470,7 +476,7 @@
                   <focusable value="true"/>
                   <font name="Roboto Condensed" size="20" style="1"/>
                   <foreground color="-16777216"/>
-                  <opaque value="false"/>
+                  <opaque value="true"/>
                   <toolTipText value="e.g. Juan Dela Cruz"/>
                 </properties>
               </component>
@@ -485,7 +491,7 @@
                   <text value="DESIGNATION"/>
                 </properties>
               </component>
-              <component id="3f5f0" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+              <component id="3f5f0" class="javax.swing.JTextField" binding="designation">
                 <constraints>
                   <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
                   <gridbag weightx="1.0" weighty="1.0"/>
@@ -495,7 +501,7 @@
                   <focusable value="true"/>
                   <font name="Roboto Condensed" size="20" style="1"/>
                   <foreground color="-16777216"/>
-                  <opaque value="false"/>
+                  <opaque value="true"/>
                 </properties>
               </component>
               <component id="bb091" class="javax.swing.JLabel">
@@ -509,7 +515,7 @@
                   <text value="COMPANY / INSTITUTION"/>
                 </properties>
               </component>
-              <component id="c4c8b" class="javax.swing.JTextField" binding="textField3" default-binding="true">
+              <component id="c4c8b" class="javax.swing.JTextField" binding="company">
                 <constraints>
                   <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
                   <gridbag weightx="1.0" weighty="1.0"/>
@@ -519,7 +525,7 @@
                   <focusable value="true"/>
                   <font name="Roboto Condensed" size="20" style="1"/>
                   <foreground color="-16777216"/>
-                  <opaque value="false"/>
+                  <opaque value="true"/>
                 </properties>
               </component>
               <component id="f5779" class="javax.swing.JLabel">
@@ -533,7 +539,7 @@
                   <text value="EMAIL"/>
                 </properties>
               </component>
-              <component id="7d44a" class="javax.swing.JTextField" binding="textField4" default-binding="true">
+              <component id="7d44a" class="javax.swing.JTextField" binding="email">
                 <constraints>
                   <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
                   <gridbag weightx="1.0" weighty="1.0"/>
@@ -543,7 +549,7 @@
                   <focusable value="true"/>
                   <font name="Roboto Condensed" size="20" style="1"/>
                   <foreground color="-16777216"/>
-                  <opaque value="false"/>
+                  <opaque value="true"/>
                 </properties>
               </component>
               <component id="686c7" class="javax.swing.JLabel">
@@ -557,7 +563,7 @@
                   <text value="MOBILE"/>
                 </properties>
               </component>
-              <component id="50155" class="javax.swing.JTextField" binding="textField5" default-binding="true">
+              <component id="50155" class="javax.swing.JTextField" binding="mobile">
                 <constraints>
                   <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
                   <gridbag weightx="1.0" weighty="1.0"/>
@@ -567,7 +573,7 @@
                   <focusable value="true"/>
                   <font name="Roboto Condensed" size="20" style="1"/>
                   <foreground color="-16777216"/>
-                  <opaque value="false"/>
+                  <opaque value="true"/>
                 </properties>
               </component>
               <component id="1492" class="javax.swing.JLabel">
@@ -579,20 +585,6 @@
                   <font name="Noto Sans" size="22" style="1"/>
                   <foreground color="-4407616"/>
                   <text value="MAILING ADDRESS"/>
-                </properties>
-              </component>
-              <component id="b61ed" class="javax.swing.JTextField" binding="textField6" default-binding="true">
-                <constraints>
-                  <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                  <gridbag weightx="1.0" weighty="50.0"/>
-                </constraints>
-                <properties>
-                  <autoscrolls value="false"/>
-                  <background color="-4407616"/>
-                  <focusable value="true"/>
-                  <font name="Roboto Condensed" size="20" style="1"/>
-                  <foreground color="-16777216"/>
-                  <opaque value="false"/>
                 </properties>
               </component>
               <grid id="276db" layout-manager="GridBagLayout">
@@ -632,6 +624,30 @@
                   </grid>
                 </children>
               </grid>
+              <scrollpane id="d89f6">
+                <constraints>
+                  <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="50.0"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="fc563" class="javax.swing.JTextArea" binding="address">
+                    <constraints/>
+                    <properties>
+                      <autoscrolls value="false"/>
+                      <background color="-4407616"/>
+                      <focusable value="true"/>
+                      <font name="Roboto Condensed" size="20" style="1"/>
+                      <foreground color="-16777216"/>
+                      <lineWrap value="true"/>
+                      <opaque value="true"/>
+                      <rows value="3"/>
+                      <wrapStyleWord value="true"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
             </children>
           </grid>
         </children>
@@ -639,7 +655,7 @@
     </children>
   </grid>
   <buttonGroups>
-    <group name="professionGroup">
+    <group name="professionGroup" bound="true">
       <member id="98982"/>
       <member id="98982"/>
       <member id="ec248"/>
