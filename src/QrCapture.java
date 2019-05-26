@@ -35,7 +35,7 @@ public class QrCapture extends JFrame implements Closeable {
         setLayout(new FlowLayout());
         setTitle("QR Code Reader");
         try {
-            setIconImage(ImageIO.read(new File("C:\\Users\\ljda0\\IdeaProjects\\CebuCon_Reg\\src\\favicon (1).png")));
+            setIconImage(ImageIO.read(new File("C:\\Temp\\favicon.png")));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -50,7 +50,7 @@ public class QrCapture extends JFrame implements Closeable {
         });
 
         List<Webcam> webcamList = Webcam.getWebcams();
-        webcam = webcamList.get(1);
+        webcam = webcamList.get(0);
         webcam.setViewSize(WebcamResolution.QVGA.getSize());
         webcam.open();
 

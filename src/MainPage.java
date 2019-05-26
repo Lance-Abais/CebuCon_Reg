@@ -169,7 +169,6 @@ public class MainPage {
                 qrText += "END:VCARD";
 
                 System.out.println(qrText);
-                filePath = "C:\\Users\\ljda0\\Desktop\\qrcode-reg-temp.png";
                 File qrFile = new File(filePath);
                 int size = (int) (203 * 1.4);
                 QRCodeGenerator qrCodeGenerator = new QRCodeGenerator();

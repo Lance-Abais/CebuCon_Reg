@@ -47,7 +47,7 @@ public class SelectFromDB {
 
     public List<String> selectNameProfession(String name, String profession) {
 
-        String url = "jdbc:sqlite:C://testDB.sqlite3";
+        String url = "jdbc:sqlite:C://Temp//DB.sqlite3";
         Connection conn = null;
         List<String> result = new ArrayList<String>();
         try {
