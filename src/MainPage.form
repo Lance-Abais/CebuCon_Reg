@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainPage">
-  <grid id="27dc6" binding="contentPane" layout-manager="FormLayout">
-    <rowspec value="center:d:noGrow"/>
-    <rowspec value="top:9dlu:noGrow"/>
-    <rowspec value="center:max(d;4px):noGrow"/>
-    <rowspec value="top:4dlu:noGrow"/>
-    <rowspec value="center:max(d;4px):noGrow"/>
-    <colspec value="fill:d:grow"/>
+  <grid id="27dc6" binding="contentPane" layout-manager="GridBagLayout">
     <constraints>
-      <xy x="34" y="20" width="1048" height="637"/>
+      <xy x="34" y="20" width="1056" height="777"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-10987173"/>
+    </properties>
     <clientProperties>
       <html.disable class="java.lang.Boolean" value="true"/>
     </clientProperties>
@@ -19,10 +15,10 @@
       <title-color color="-4473925"/>
     </border>
     <children>
-      <grid id="d9708" binding="header" custom-create="true" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+      <grid id="d9708" binding="header" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-          <forms/>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
           <background color="-16777216"/>
@@ -49,14 +45,10 @@
           </component>
         </children>
       </grid>
-      <grid id="e42ba" binding="profession" custom-create="true" layout-manager="FormLayout">
-        <rowspec value="center:d:noGrow"/>
-        <rowspec value="top:4dlu:noGrow"/>
-        <rowspec value="center:max(d;4px):noGrow"/>
-        <colspec value="fill:d:grow"/>
+      <grid id="e42ba" binding="profession" layout-manager="GridBagLayout">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
-          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
           <background color="-4407616"/>
@@ -70,8 +62,8 @@
         <children>
           <grid id="ed850" layout-manager="FlowLayout" hgap="30" vgap="5" flow-align="0">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-              <forms/>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
             </constraints>
             <properties>
               <opaque value="false"/>
@@ -127,8 +119,8 @@
           </grid>
           <grid id="711c9" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
             <constraints>
-              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-              <forms/>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
             </constraints>
             <properties>
               <doubleBuffered value="true"/>
@@ -186,326 +178,458 @@
           </grid>
         </children>
       </grid>
-      <grid id="76cf1" binding="body" layout-manager="FormLayout">
-        <rowspec value="center:d:noGrow"/>
-        <colspec value="fill:d:grow"/>
-        <colspec value="left:4dlu:noGrow"/>
-        <colspec value="fill:max(d;4px):noGrow"/>
-        <colspec value="left:4dlu:noGrow"/>
-        <colspec value="fill:d:grow"/>
+      <grid id="76cf1" binding="body" layout-manager="GridBagLayout">
         <constraints>
-          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-          <forms defaultalign-horz="false"/>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
-        <properties/>
+        <properties>
+          <opaque value="false"/>
+        </properties>
         <border type="none"/>
         <children>
-          <grid id="c5ff4" binding="leftBody" layout-manager="FormLayout">
-            <rowspec value="center:d:noGrow"/>
-            <colspec value="fill:d:grow"/>
+          <grid id="d3d9a" binding="rightBody" layout-manager="GridBagLayout">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
-              <forms defaultalign-horz="false" defaultalign-vert="false"/>
-            </constraints>
-            <properties/>
-            <border type="none"/>
-            <children>
-              <grid id="f857" binding="contactDetails" custom-create="true" layout-manager="FormLayout">
-                <rowspec value="center:max(d;4px):noGrow"/>
-                <rowspec value="top:4dlu:noGrow"/>
-                <rowspec value="center:max(d;4px):noGrow"/>
-                <rowspec value="top:4dlu:noGrow"/>
-                <rowspec value="center:max(d;4px):noGrow"/>
-                <rowspec value="top:4dlu:noGrow"/>
-                <rowspec value="center:max(d;4px):noGrow"/>
-                <rowspec value="top:4dlu:noGrow"/>
-                <rowspec value="center:max(d;4px):noGrow"/>
-                <rowspec value="top:4dlu:noGrow"/>
-                <rowspec value="center:max(d;4px):noGrow"/>
-                <rowspec value="top:4dlu:noGrow"/>
-                <rowspec value="center:max(d;4px):noGrow"/>
-                <rowspec value="top:4dlu:noGrow"/>
-                <rowspec value="center:max(d;4px):noGrow"/>
-                <rowspec value="top:4dlu:noGrow"/>
-                <rowspec value="center:max(d;4px):noGrow"/>
-                <rowspec value="top:4dlu:noGrow"/>
-                <rowspec value="center:max(d;4px):noGrow"/>
-                <rowspec value="top:4dlu:noGrow"/>
-                <rowspec value="center:max(d;4px):noGrow"/>
-                <rowspec value="top:4dlu:noGrow"/>
-                <rowspec value="center:max(d;4px):noGrow"/>
-                <rowspec value="top:4dlu:noGrow"/>
-                <rowspec value="center:max(d;4px):noGrow"/>
-                <colspec value="fill:max(d;4px):noGrow"/>
-                <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
-                  <forms defaultalign-horz="false" defaultalign-vert="false"/>
-                </constraints>
-                <properties/>
-                <border type="none"/>
-                <children>
-                  <component id="f5b37" class="javax.swing.JLabel">
-                    <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                      <forms/>
-                    </constraints>
-                    <properties>
-                      <font name="Noto Sans" size="22" style="1"/>
-                      <text value="Label"/>
-                    </properties>
-                  </component>
-                  <component id="d215" class="javax.swing.JLabel">
-                    <constraints>
-                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                      <forms/>
-                    </constraints>
-                    <properties>
-                      <font name="Noto Sans" size="22" style="1"/>
-                      <text value="Label"/>
-                    </properties>
-                  </component>
-                  <component id="a28a4" class="javax.swing.JTextField" binding="textField1" default-binding="true">
-                    <constraints>
-                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                      <forms/>
-                    </constraints>
-                    <properties/>
-                  </component>
-                  <component id="c845f" class="javax.swing.JLabel">
-                    <constraints>
-                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                      <forms/>
-                    </constraints>
-                    <properties>
-                      <font name="Noto Sans" size="22" style="1"/>
-                      <text value="Label"/>
-                    </properties>
-                  </component>
-                  <component id="3f5f0" class="javax.swing.JTextField" binding="textField2" default-binding="true">
-                    <constraints>
-                      <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                      <forms/>
-                    </constraints>
-                    <properties/>
-                  </component>
-                  <component id="bb091" class="javax.swing.JLabel">
-                    <constraints>
-                      <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                      <forms/>
-                    </constraints>
-                    <properties>
-                      <font name="Noto Sans" size="22" style="1"/>
-                      <text value="Label"/>
-                    </properties>
-                  </component>
-                  <component id="c4c8b" class="javax.swing.JTextField" binding="textField3" default-binding="true">
-                    <constraints>
-                      <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                      <forms/>
-                    </constraints>
-                    <properties/>
-                  </component>
-                  <component id="f5779" class="javax.swing.JLabel">
-                    <constraints>
-                      <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                      <forms/>
-                    </constraints>
-                    <properties>
-                      <font name="Noto Sans" size="22" style="1"/>
-                      <text value="Label"/>
-                    </properties>
-                  </component>
-                  <component id="7d44a" class="javax.swing.JTextField" binding="textField4" default-binding="true">
-                    <constraints>
-                      <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                      <forms/>
-                    </constraints>
-                    <properties/>
-                  </component>
-                  <component id="686c7" class="javax.swing.JLabel">
-                    <constraints>
-                      <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                      <forms/>
-                    </constraints>
-                    <properties>
-                      <font name="Noto Sans" size="22" style="1"/>
-                      <text value="Label"/>
-                    </properties>
-                  </component>
-                  <component id="50155" class="javax.swing.JTextField" binding="textField5" default-binding="true">
-                    <constraints>
-                      <grid row="20" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                      <forms/>
-                    </constraints>
-                    <properties/>
-                  </component>
-                  <component id="1492" class="javax.swing.JLabel">
-                    <constraints>
-                      <grid row="22" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                      <forms/>
-                    </constraints>
-                    <properties>
-                      <font name="Noto Sans" size="22" style="1"/>
-                      <text value="Label"/>
-                    </properties>
-                  </component>
-                  <component id="b61ed" class="javax.swing.JTextField" binding="textField6" default-binding="true">
-                    <constraints>
-                      <grid row="24" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                      <forms/>
-                    </constraints>
-                    <properties/>
-                  </component>
-                </children>
-              </grid>
-            </children>
-          </grid>
-          <grid id="d3d9a" binding="rightBody" layout-manager="FormLayout">
-            <rowspec value="center:max(d;4px):noGrow"/>
-            <rowspec value="top:4dlu:noGrow"/>
-            <rowspec value="center:max(d;4px):noGrow"/>
-            <rowspec value="top:4dlu:noGrow"/>
-            <rowspec value="center:max(d;4px):noGrow"/>
-            <colspec value="fill:max(d;4px):noGrow"/>
-            <constraints>
-              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
-              <forms defaultalign-horz="false" defaultalign-vert="false"/>
+              <grid row="0" column="2" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
+              <gridbag top="0" left="10" bottom="10" right="10" weightx="1.0" weighty="1.0"/>
             </constraints>
             <properties>
               <opaque value="false"/>
             </properties>
             <border type="none"/>
             <children>
-              <grid id="9e8d4" binding="purpose" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+              <grid id="9e8d4" binding="purpose" layout-manager="GridBagLayout">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                  <forms/>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
                 </constraints>
-                <properties/>
+                <properties>
+                  <opaque value="false"/>
+                </properties>
                 <border type="none"/>
                 <children>
                   <component id="6f89f" class="javax.swing.JLabel">
-                    <constraints/>
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
                     <properties>
-                      <text value="Label"/>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <text value="PURPOSE OF VISIT"/>
                     </properties>
                   </component>
                   <component id="4bfaf" class="javax.swing.JCheckBox" binding="checkBox1" default-binding="true">
-                    <constraints/>
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
                     <properties>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <opaque value="false"/>
+                      <selected value="false"/>
                       <text value="CheckBox"/>
                     </properties>
                   </component>
                   <component id="ad0e8" class="javax.swing.JCheckBox" binding="checkBox2" default-binding="true">
-                    <constraints/>
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
                     <properties>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <opaque value="false"/>
                       <text value="CheckBox"/>
                     </properties>
                   </component>
                   <component id="5539" class="javax.swing.JCheckBox" binding="checkBox3" default-binding="true">
-                    <constraints/>
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
                     <properties>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <opaque value="false"/>
                       <text value="CheckBox"/>
                     </properties>
                   </component>
                   <component id="455fd" class="javax.swing.JCheckBox" binding="checkBox4" default-binding="true">
-                    <constraints/>
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
                     <properties>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <opaque value="false"/>
                       <text value="CheckBox"/>
-                    </properties>
-                  </component>
-                  <component id="310a4" class="javax.swing.JLabel">
-                    <constraints/>
-                    <properties>
-                      <text value="Label"/>
                     </properties>
                   </component>
                   <component id="6f976" class="javax.swing.JCheckBox" binding="checkBox5" default-binding="true">
-                    <constraints/>
+                    <constraints>
+                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
                     <properties>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <opaque value="false"/>
                       <text value="CheckBox"/>
-                    </properties>
-                  </component>
-                </children>
-              </grid>
-              <grid id="1f7e1" binding="buttonsPane" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
-                <constraints>
-                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                  <forms/>
-                </constraints>
-                <properties/>
-                <border type="none"/>
-                <children>
-                  <component id="e408e" class="javax.swing.JButton" binding="button1" default-binding="true">
-                    <constraints/>
-                    <properties>
-                      <text value="Button"/>
-                    </properties>
-                  </component>
-                  <component id="1af30" class="javax.swing.JButton" binding="button2" default-binding="true">
-                    <constraints/>
-                    <properties>
-                      <text value="Button"/>
-                    </properties>
-                  </component>
-                </children>
-              </grid>
-              <grid id="b6da" binding="how" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
-                <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                  <forms/>
-                </constraints>
-                <properties/>
-                <border type="none"/>
-                <children>
-                  <component id="989ff" class="javax.swing.JLabel">
-                    <constraints/>
-                    <properties>
-                      <text value="Label"/>
                     </properties>
                   </component>
                   <component id="84d86" class="javax.swing.JCheckBox" binding="checkBox6" default-binding="true">
-                    <constraints/>
+                    <constraints>
+                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
                     <properties>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <opaque value="false"/>
                       <text value="CheckBox"/>
                     </properties>
                   </component>
-                  <component id="95b42" class="javax.swing.JCheckBox" binding="checkBox7" default-binding="true">
-                    <constraints/>
+                </children>
+              </grid>
+              <grid id="1f7e1" binding="buttonsPane" layout-manager="GridBagLayout">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <opaque value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="1af30" class="javax.swing.JButton" binding="PRINTButton" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
                     <properties>
+                      <background color="-16777216"/>
+                      <borderPainted value="true"/>
+                      <contentAreaFilled value="true"/>
+                      <focusable value="true"/>
+                      <font name="Noto Sans" size="20" style="1"/>
+                      <foreground color="-16777216"/>
+                      <multiClickThreshhold value="1"/>
+                      <name value="printButton"/>
+                      <opaque value="false"/>
+                      <text value="PRINT"/>
+                    </properties>
+                  </component>
+                  <component id="e408e" class="javax.swing.JButton" binding="QRCODEButton" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <background color="-16739640"/>
+                      <focusable value="true"/>
+                      <font name="Noto Sans" size="20" style="1"/>
+                      <foreground color="-16777216"/>
+                      <label value="QR CODE"/>
+                      <multiClickThreshhold value="1"/>
+                      <name value="qrRead"/>
+                      <opaque value="false"/>
+                      <text value="QR CODE"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="b6da" binding="how" layout-manager="GridBagLayout">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <font name="Noto Sans" size="24" style="1"/>
+                  <opaque value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="989ff" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <text value="HOW DID YOU KNOW ABOUT CEBUCON?"/>
+                    </properties>
+                  </component>
+                  <component id="95b42" class="javax.swing.JCheckBox" binding="checkBox7" default-binding="true">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <opaque value="false"/>
                       <text value="CheckBox"/>
                     </properties>
                   </component>
                   <component id="16135" class="javax.swing.JCheckBox" binding="checkBox8" default-binding="true">
-                    <constraints/>
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
                     <properties>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <opaque value="false"/>
                       <text value="CheckBox"/>
                     </properties>
                   </component>
                   <component id="f02a9" class="javax.swing.JCheckBox" binding="checkBox9" default-binding="true">
-                    <constraints/>
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
                     <properties>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <opaque value="false"/>
                       <text value="CheckBox"/>
                     </properties>
                   </component>
                   <component id="24f6f" class="javax.swing.JCheckBox" binding="checkBox10" default-binding="true">
-                    <constraints/>
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
                     <properties>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <opaque value="false"/>
                       <text value="CheckBox"/>
                     </properties>
                   </component>
                   <component id="83c3c" class="javax.swing.JCheckBox" binding="checkBox11" default-binding="true">
-                    <constraints/>
+                    <constraints>
+                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
                     <properties>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <opaque value="false"/>
                       <text value="CheckBox"/>
                     </properties>
                   </component>
                   <component id="82c38" class="javax.swing.JCheckBox" binding="checkBox12" default-binding="true">
-                    <constraints/>
+                    <constraints>
+                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
                     <properties>
+                      <font name="Noto Sans" size="24" style="1"/>
+                      <foreground color="-4407616"/>
+                      <opaque value="false"/>
                       <text value="CheckBox"/>
                     </properties>
                   </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="f857" binding="contactDetails" layout-manager="GridBagLayout">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag top="0" left="10" bottom="10" right="0" weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="d215" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <font name="Noto Sans" size="22" style="1"/>
+                  <foreground color="-4407616"/>
+                  <text value="FULL NAME"/>
+                </properties>
+              </component>
+              <component id="a28a4" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <background color="-4407616"/>
+                  <focusable value="true"/>
+                  <font name="Roboto Condensed" size="20" style="1"/>
+                  <foreground color="-16777216"/>
+                  <opaque value="false"/>
+                  <toolTipText value="e.g. Juan Dela Cruz"/>
+                </properties>
+              </component>
+              <component id="c845f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <font name="Noto Sans" size="22" style="1"/>
+                  <foreground color="-4407616"/>
+                  <text value="DESIGNATION"/>
+                </properties>
+              </component>
+              <component id="3f5f0" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <background color="-4407616"/>
+                  <focusable value="true"/>
+                  <font name="Roboto Condensed" size="20" style="1"/>
+                  <foreground color="-16777216"/>
+                  <opaque value="false"/>
+                </properties>
+              </component>
+              <component id="bb091" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <font name="Noto Sans" size="22" style="1"/>
+                  <foreground color="-4407616"/>
+                  <text value="COMPANY / INSTITUTION"/>
+                </properties>
+              </component>
+              <component id="c4c8b" class="javax.swing.JTextField" binding="textField3" default-binding="true">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <background color="-4407616"/>
+                  <focusable value="true"/>
+                  <font name="Roboto Condensed" size="20" style="1"/>
+                  <foreground color="-16777216"/>
+                  <opaque value="false"/>
+                </properties>
+              </component>
+              <component id="f5779" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <font name="Noto Sans" size="22" style="1"/>
+                  <foreground color="-4407616"/>
+                  <text value="EMAIL"/>
+                </properties>
+              </component>
+              <component id="7d44a" class="javax.swing.JTextField" binding="textField4" default-binding="true">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <background color="-4407616"/>
+                  <focusable value="true"/>
+                  <font name="Roboto Condensed" size="20" style="1"/>
+                  <foreground color="-16777216"/>
+                  <opaque value="false"/>
+                </properties>
+              </component>
+              <component id="686c7" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <font name="Noto Sans" size="22" style="1"/>
+                  <foreground color="-4407616"/>
+                  <text value="MOBILE"/>
+                </properties>
+              </component>
+              <component id="50155" class="javax.swing.JTextField" binding="textField5" default-binding="true">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <background color="-4407616"/>
+                  <focusable value="true"/>
+                  <font name="Roboto Condensed" size="20" style="1"/>
+                  <foreground color="-16777216"/>
+                  <opaque value="false"/>
+                </properties>
+              </component>
+              <component id="1492" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <font name="Noto Sans" size="22" style="1"/>
+                  <foreground color="-4407616"/>
+                  <text value="MAILING ADDRESS"/>
+                </properties>
+              </component>
+              <component id="b61ed" class="javax.swing.JTextField" binding="textField6" default-binding="true">
+                <constraints>
+                  <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="50.0"/>
+                </constraints>
+                <properties>
+                  <autoscrolls value="false"/>
+                  <background color="-4407616"/>
+                  <focusable value="true"/>
+                  <font name="Roboto Condensed" size="20" style="1"/>
+                  <foreground color="-16777216"/>
+                  <opaque value="false"/>
+                </properties>
+              </component>
+              <grid id="276db" layout-manager="GridBagLayout">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <opaque value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <grid id="6b5c3" layout-manager="GridBagLayout">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <background color="-4407616"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="f5b37" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                          <gridbag weightx="1.0" weighty="1.0"/>
+                        </constraints>
+                        <properties>
+                          <background color="-4407616"/>
+                          <font name="Noto Sans" size="24" style="1"/>
+                          <foreground color="-16777216"/>
+                          <opaque value="false"/>
+                          <text value="CONTACT DETAILS"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
                 </children>
               </grid>
             </children>
@@ -514,4 +638,24 @@
       </grid>
     </children>
   </grid>
+  <buttonGroups>
+    <group name="professionGroup">
+      <member id="98982"/>
+      <member id="98982"/>
+      <member id="ec248"/>
+      <member id="70acc"/>
+      <member id="72eec"/>
+      <member id="b8491"/>
+      <member id="2b6d0"/>
+      <member id="a0cd8"/>
+      <member id="8b465"/>
+      <member id="5066d"/>
+    </group>
+    <group name="purposeGroup">
+      <member id="4bfaf"/>
+    </group>
+    <group name="howGroup">
+      <member id="95b42"/>
+    </group>
+  </buttonGroups>
 </form>

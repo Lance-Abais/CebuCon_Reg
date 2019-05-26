@@ -17,7 +17,7 @@ import java.util.List;
 public class Main extends JFrame implements Printable {
 
     private int dpi = 203;
-    private int width = (int) (203*3);
+    private int width = (203*3);
     private int height = (int) (203*1.5);
 
 
@@ -48,10 +48,8 @@ public class Main extends JFrame implements Printable {
         preview.setText("Print Preview");
         panel.add(qrRead);
         panel.add(preview);
-        MainPage mainPage = new MainPage();
-        JPanel content = mainPage.setContent();
-        frame.add(content);
-        frame.setSize(200,300);
+
+        frame.setContentPane(new MainPage().$$$getRootComponent$$$());
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 
