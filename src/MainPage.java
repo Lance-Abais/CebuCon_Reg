@@ -225,6 +225,8 @@ public class MainPage {
                     if (pjob.printDialog()) {
                         try {
                             pjob.print();
+                            frame2.dispose();
+                            resetForm();
                         } catch (PrinterException e) {
                             e.printStackTrace();
                         }
@@ -266,6 +268,28 @@ public class MainPage {
         if (bannersStreamersCheckBox.isSelected()) howS.add(bannersStreamersCheckBox.getText());
         if (cebuCONMailerCheckBox.isSelected()) howS.add(cebuCONMailerCheckBox.getText());
         if (wordOfMouthCheckBox.isSelected()) howS.add(wordOfMouthCheckBox.getText());
+    }
+
+    public void resetForm() {
+        fName.setText("");
+        designation.setText("");
+        company.setText("");
+        address.setText("");
+        email.setText("");
+        mobile.setText("");
+
+        ButtonGroup resetPurpose = new ButtonGroup();
+        ButtonGroup resetHow = new ButtonGroup();
+
+        for (int i = 0; i < purposeArr.size(); i++) resetPurpose.add(purposeArr.get(i));
+        for (int i = 0; i < howArr.size(); i++) resetHow.add(howArr.get(i));
+        professionGroup.clearSelection();
+        resetPurpose.clearSelection();
+        resetHow.clearSelection();
+
+        for (int i = 0; i < purposeArr.size(); i++) resetPurpose.remove(purposeArr.get(i));
+        for (int i = 0; i < howArr.size(); i++) resetHow.remove(howArr.get(i));
+
     }
 
 

@@ -31,6 +31,7 @@ public class Main extends JFrame {
             e.printStackTrace();
         }
         frame.setIconImage(favicon);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
     }
 }

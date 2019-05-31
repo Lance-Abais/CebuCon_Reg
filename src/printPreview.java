@@ -36,8 +36,8 @@ public class printPreview extends JPanel {
         textArea1.setSize(new Dimension(144,96));
         textArea2.setSize(new Dimension(144,38));
 
-        textArea1.setFont(new Font("Roboto Condensed Bold", Font.PLAIN, 24));
-        textArea2.setFont(new Font("Roboto Condensed Bold", Font.PLAIN, 14));
+        textArea1.setFont(new Font("Roboto Condensed Bold", Font.PLAIN, 20));
+        textArea2.setFont(new Font("Roboto Condensed Bold", Font.PLAIN, 12));
         textArea1.setForeground(Color.BLACK);
         textArea2.setForeground(Color.BLACK);
 
@@ -54,11 +54,22 @@ public class printPreview extends JPanel {
         picPrint.setAlignmentX(0);
         picPrint.setAlignmentY(0);
         namePrint = new JPanel();
-        namePrint.setLayout(new GridLayout(2,1));
+        namePrint.setLayout(new GridBagLayout());
+        namePrint.setBackground(new Color(-1));
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.weighty = 2;
+        gbc.weightx = 1;
+        gbc.gridx = 1;
+        gbc.gridy = 1;
+        gbc.insets = new Insets(0,0,0,0);
         textArea1.setBackground(new Color(-1));
-        namePrint.add(textArea1);
+        namePrint.add(textArea1,gbc);
         textArea2.setBackground(new Color(-1));
-        namePrint.add(textArea2);
+        gbc.weighty = 1;
+        gbc.gridx = 1;
+        gbc.gridy = 2;
+        gbc.insets = new Insets(0,0,0,0);
+        namePrint.add(textArea2,gbc);
         previewPane.add(namePrint,1);
     }
 }
